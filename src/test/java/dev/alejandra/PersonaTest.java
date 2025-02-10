@@ -11,9 +11,9 @@ public class PersonaTest {
         double kg = 72.6; 
         double meters = 1.67;
 
-        Persona persona = new Persona(kg, meters)
+        Persona persona = new Persona(kg, meters);
 
-        assertThat(persona.getKg(), is(kg))
+        assertThat(persona.getKg(), is(kg));
      
     }
 
