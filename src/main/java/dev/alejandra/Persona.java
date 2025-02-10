@@ -11,6 +11,10 @@ public class Persona {
         return this.kg;
     }
 
+    public double getMeters(){
+        return this.meters;
+    }
+
 
 
 }

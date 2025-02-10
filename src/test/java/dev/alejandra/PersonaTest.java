@@ -27,7 +27,7 @@ public class PersonaTest {
     @Test
     void testReturnMetres() {
 
-        assertThat(persona.getMeters(),is(metres);
+        assertThat(persona.getMeters(),is(meters));
     }
 
 }
