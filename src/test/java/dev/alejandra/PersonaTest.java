@@ -23,9 +23,11 @@ public class PersonaTest {
 
         assertThat(persona.getKg(), is(kg));
     }
+
     @Test
     void testReturnMetres() {
 
+        assertThat(persona.getMeters(),is(metres);
     }
 
 }
