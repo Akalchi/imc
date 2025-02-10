@@ -15,6 +15,4 @@ public class Persona {
         return this.meters;
     }
 
-
-
 }
