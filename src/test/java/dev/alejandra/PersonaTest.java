@@ -55,4 +55,93 @@ public class PersonaTest {
         assertEquals(30.86, imc, 0.01);
     }
 
+    @Test
+    public void testDelgadezSevera() {
+        double peso = 40; 
+        double altura = 1.70; 
+        Persona persona = new Persona(peso, altura);
+
+        String categoria = persona.determineIMCCategory();
+
+        assertEquals("Delgadez severa", categoria);
+    }
+
+    @Test
+    public void testDelgadezModerada() {
+        double peso = 48; 
+        double altura = 1.70; 
+        Persona persona = new Persona(peso, altura);
+    
+        String categoria = persona.determineIMCCategory();
+    
+        assertEquals("Delgadez moderada", categoria);
+    }
+
+    @Test
+    public void testDelgadezLeve() {
+        double peso = 50;
+        double altura = 1.70; 
+        Persona persona = new Persona(peso, altura);
+
+        String categoria = persona.determineIMCCategory();
+
+        assertEquals("Delgadez leve", categoria);
+    }
+
+    @Test
+    public void testPesoNormal() {
+        double peso = 65; 
+        double altura = 1.70; 
+        Persona persona = new Persona(peso, altura);
+
+        String categoria = persona.determineIMCCategory();
+
+        assertEquals("Peso normal", categoria);
+    }
+
+    @Test
+    public void testSobrepeso() {
+        double peso = 85; 
+        double altura = 1.70; 
+        Persona persona = new Persona(peso, altura);
+
+        String categoria = persona.determineIMCCategory();
+
+        assertEquals("Sobrepeso", categoria);
+    }
+
+    @Test
+    public void testObesidadLeve() {
+        double peso = 95; 
+        double altura = 1.70; 
+        Persona persona = new Persona(peso, altura);
+
+        String categoria = persona.determineIMCCategory();
+
+        assertEquals("Obesidad leve", categoria);
+    }
+
+    @Test
+    public void testObesidadModerada() {
+       
+        double peso = 110; 
+        double altura = 1.70; 
+        Persona persona = new Persona(peso, altura);
+
+        String categoria = persona.determineIMCCategory();
+
+        assertEquals("Obesidad moderada", categoria);
+    }
+
+    @Test
+    public void testObesidadMorbida() {
+        double peso = 130; 
+        double altura = 1.70; 
+        Persona persona = new Persona(peso, altura);
+
+        String categoria = persona.determineIMCCategory();
+
+        assertEquals("Obesidad mórbida", categoria);
+    }
+
 }

@@ -20,4 +20,6 @@ public class Persona {
         return Math.round(this.kg / (Math.pow(this.meters, 2)) * 100) / 100.0;
     }
 
+   
+
 }
